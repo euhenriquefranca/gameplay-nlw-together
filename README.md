@@ -5,4 +5,4 @@ Bem vindo ao projeto **GamePlay** da **Next Level Week Together**. Aqui, você v
 Está sendo incrível criar esse App. Borá codar! 🚀 
 
 
-[![Linkedin Badge](https://img.shields.io/badge/-Rodrigo%20Gonçalves%20Santana-6633cc?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/rodrigo-gon%C3%A7alves-santana/)](https://www.linkedin.com/in/euhenquefranca/) 
+[![Linkedin Badge](https://img.shields.io/badge/-Henrique%20França%20-6633cc?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/euhenquefranca/)](https://www.linkedin.com/in/euhenquefranca/) 
