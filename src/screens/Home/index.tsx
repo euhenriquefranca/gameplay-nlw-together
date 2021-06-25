@@ -7,7 +7,7 @@ import { ButtonAdd } from "../../components/ButtonAdd";
 import { Profile } from "../../components/Profile";
 import { ListHeader } from "../../components/ListHeader";
 import { Appointment } from "../../components/Appointment";
-import {ListDivider} from "../../components/ListDivider";
+import { ListDivider } from "../../components/ListDivider";
 import { Background } from "../../components/Background";
 
 import { styles } from "./styles";
@@ -60,27 +60,26 @@ export function Home() {
     <Background>
       <View style={styles.header}>
         <Profile />
-        <ButtonAdd onPress={handleAppointmentCreate}/>
+        <ButtonAdd onPress={handleAppointmentCreate} />
       </View>
-      <View>
-        <CategorySelect
-          categorySelected={category}
-          setCategory={handleCategorySelect}
-        />
-        <View style={styles.content}>
-          <ListHeader title="Partidas agendadas" subtitle="Total 6" />
-          <FlatList
-            data={appoinments}
-            keyExtractor={(item) => item.id}
-            renderItem={({ item }) => (
-              <Appointment onPress={handleAppointmentDetails} data={item} />
-            )}
-            ItemSeparatorComponent={() => <ListDivider />}
-            style={styles.matches}
-            showsVerticalScrollIndicator={false}
-          />
-        </View>
-      </View>
+
+      <CategorySelect
+        categorySelected={category}
+        setCategory={handleCategorySelect}
+      />
+      <ListHeader title="Partidas agendadas" subtitle="Total 6" />
+
+      <FlatList
+        data={appoinments}
+        keyExtractor={(item) => item.id}
+        renderItem={({ item }) => (
+          <Appointment onPress={handleAppointmentDetails} data={item} />
+        )}
+        ItemSeparatorComponent={() => <ListDivider />}
+        contentContainerStyle={{ paddingBottom: 69 }}
+        style={styles.matches}
+        showsVerticalScrollIndicator={false}
+      />
     </Background>
   );
 }
