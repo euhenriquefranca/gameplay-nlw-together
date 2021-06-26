@@ -1,8 +1,8 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { RectButton, RectButtonProps } from "react-native-gesture-handler";
 import { LinearGradient } from "expo-linear-gradient";
 import { SvgProps } from "react-native-svg";
-import { RectButton, RectButtonProps } from "react-native-gesture-handler";
+import { View, Text } from "react-native";
 
 import { styles } from "./styles";
 import { theme } from "../../global/styles/theme";
@@ -14,7 +14,7 @@ type Props = RectButtonProps & {
   checked?: boolean;
 };
 
-export default function Category({
+export function Category({
   title,
   icon: Icon,
   checked = false,
@@ -22,6 +22,7 @@ export default function Category({
   ...rest
 }: Props) {
   const { secondary40, secondary50, secondary70, secondary85 } = theme.colors;
+
   return (
     <RectButton {...rest}>
       <LinearGradient
@@ -35,7 +36,9 @@ export default function Category({
           {hasCheckBox && (
             <View style={checked ? styles.checked : styles.check} />
           )}
+
           <Icon width={48} height={48} />
+
           <Text style={styles.title}>{title}</Text>
         </LinearGradient>
       </LinearGradient>

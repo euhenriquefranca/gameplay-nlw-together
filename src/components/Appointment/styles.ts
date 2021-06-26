@@ -1,14 +1,14 @@
-import { StyleSheet } from "react-native";
-import { theme } from "../../global/styles/theme";
+import { StyleSheet } from 'react-native';
+import { theme } from '../../global/styles/theme';
 
 export const styles = StyleSheet.create({
   container: {
     width: '100%',
     flexDirection: 'row',
-    alignSelf: 'center'
+    alignSelf: 'center',
   },
   content: {
-    flex: 1
+    flex: 1,
   },
   header: {
     width: '100%',
@@ -17,8 +17,8 @@ export const styles = StyleSheet.create({
     marginBottom: 12
   },
   title: {
-    fontFamily: theme.fonts.text400,
-    color: theme.colors.highlight,
+    fontFamily: theme.fonts.title700,
+    color: theme.colors.heading,
     fontSize: 18
   },
   category: {
@@ -30,21 +30,21 @@ export const styles = StyleSheet.create({
   footer: {
     width: '100%',
     flexDirection: 'row',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
   },
   dateInfo: {
     flexDirection: 'row',
-    alignItems: 'center'
+    alignItems: 'center',
   },
   playersInfo: {
     flexDirection: 'row',
-    alignItems: 'center'
+    alignItems: 'center',
   },
   date: {
     fontFamily: theme.fonts.text500,
     color: theme.colors.heading,
     fontSize: 13,
-    marginLeft: 7,    
+    marginLeft: 7
   },
   player: {
     fontFamily: theme.fonts.text500,
@@ -60,5 +60,4 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
     marginRight: 20
   }
-
-})
+});
